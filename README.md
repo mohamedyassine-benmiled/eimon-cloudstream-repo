@@ -16,7 +16,7 @@ Repository name: **Eimon Cloudstream Repo**.
 
 Install **Qrmzi** from this repository, then select it on Home or Search. It includes Turkish series, movies, latest episodes, and Arabic search, with the video-server choices supplied by `www.qrmzi.tv` (CDNPlus, MP4Plus, AnaFast, VidSpeed where available).
 
-Qrmzi requires no account or Phisher extension. The currently inspected content is Arabic-subtitled; no separate dub catalogue was found. Original HLS masters are preserved so any audio/subtitle tracks supplied by a server remain selectable. Unavailable uploads and temporarily broken mirrors cannot be guaranteed. Android phone playback still needs device verification.
+Qrmzi requires no account or Phisher extension. The currently inspected content is Arabic-subtitled; no separate dub catalogue was found. Original HLS masters are preserved so any audio/subtitle tracks supplied by a server remain selectable. Unavailable uploads and temporarily broken mirrors cannot be guaranteed. **Version 2 fixes Android/TV “No Links Found” caused by Android's stricter regex parser; playback was confirmed on an Android 13 phone.** TV playback still awaits device confirmation.
 
 ## AniKoto Account
 
