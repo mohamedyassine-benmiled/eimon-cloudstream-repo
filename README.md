@@ -12,6 +12,12 @@ https://raw.githubusercontent.com/mohamedyassine-benmiled/eimon-cloudstream-repo
 
 Repository name: **Eimon Cloudstream Repo**.
 
+## Qrmzi — قرمزي
+
+Install **Qrmzi** from this repository, then select it on Home or Search. It includes Turkish series, movies, latest episodes, and Arabic search, with the video-server choices supplied by `www.qrmzi.tv` (CDNPlus, MP4Plus, AnaFast, VidSpeed where available).
+
+Qrmzi requires no account or Phisher extension. The currently inspected content is Arabic-subtitled; no separate dub catalogue was found. Original HLS masters are preserved so any audio/subtitle tracks supplied by a server remain selectable. Unavailable uploads and temporarily broken mirrors cannot be guaranteed. Android phone playback still needs device verification.
+
 ## AniKoto Account
 
 Browse **Continue Watching**, **Watching – New Episodes**, **Latest Updated**, **Most Popular**, and **Ongoing**, and search anime within AniKoto Account.
