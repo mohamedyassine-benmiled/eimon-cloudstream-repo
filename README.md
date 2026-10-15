@@ -14,7 +14,9 @@ Repository name: **Eimon Cloudstream Repo**.
 
 ## AniKoto Account
 
-Browse your Anikoto website's Continue Watching list, with episode and timestamp labels.
+Browse **Continue Watching**, **Spotlight**, **Latest Updated**, **Most Popular**, and **Ongoing**, and search anime within AniKoto Account.
+
+Version 5 reuses Phisher AniKoto's catalog lists/search where available, adds a landscape Spotlight row from Anikoto's Home page, and falls back to public website catalog/search pages if needed. Public browsing/search works without login. Only your personal Continue Watching list needs the saved account session. Phisher AniKoto is still needed for title details and playback.
 
 1. Install **AniKoto Account** from this repository.
 2. For playback, also install **AniKoto** from **Phisher Repo**:
@@ -25,6 +27,8 @@ Browse your Anikoto website's Continue Watching list, with episode and timestamp
 4. Open **AniKoto Account's settings/gear button → Sign in**.
 5. Log in on Anikoto, then tap **Use this session**.
 6. Select **AniKoto Account** on Home and refresh.
+
+Browse its rows or search with **AniKoto Account** selected. Results stay under this provider rather than opening directly through Phisher, allowing the account extension to register episodes for optional sync. After updating from an older version, restart the app and refresh Home to load the new rows. In-app navigation and sync still need device verification; adding browsing lists does not establish that the progress bridge is working on every host version.
 
 Timestamps on the list are labels, not automatic seek/resume. Playback extraction is delegated to the separately installed Phisher AniKoto extension.
 
