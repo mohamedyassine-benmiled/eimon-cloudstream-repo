@@ -28,7 +28,7 @@ Browse your Anikoto website's Continue Watching list, with episode and timestamp
 
 This version displays the website's list. Timestamps are labels: automatic timestamp resume and progress uploads are future features. Playback extraction is delegated to the separately installed Phisher AniKoto extension.
 
-Android 6+ required. The extension saves an encrypted website session on your device, not your password. Use **Forget login** to disconnect or switch accounts. Login and playback should be tested on your device; this release is not advertised as device-tested.
+Version 2 stores the session using SharedPreferences, available in Cloudstream Android and cs3d Windows, with no Android Keystore dependency. The session cookie is **unencrypted** in app data: do not share preference files or backups. Your password is not stored. Use **Forget login** to disconnect or switch accounts. Android users upgrading from version 1 must sign in again once. Android 6+ or cs3d's compatibility runtime is required; login, restart/persistence, and playback still need device testing.
 
 ## Updates
 
