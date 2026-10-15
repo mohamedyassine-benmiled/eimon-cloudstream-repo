@@ -36,6 +36,8 @@ No matches or no login means the Home shelf is omitted. Cards label the latest a
 
 Browse its rows or search with **AniKoto Account** selected. Results stay under this provider rather than opening directly through Phisher, allowing the account extension to register episodes for optional sync. After updating from an older version, restart the app and refresh Home to load the new rows. In-app navigation and sync still need device verification; adding browsing lists does not establish that the progress bridge is working on every host version.
 
+**Android login popup (v7):** reserves a real browser height to address the reported empty-browser area where only buttons appeared. It also adds Reload and page-loading error messages. If the page still fails, update/enable Android System WebView or Chrome and report the error shown in the popup. This layout change still needs a device retest; cs3d uses the same login/session flow as before.
+
 Timestamps on the list are labels, not automatic seek/resume. Playback extraction is delegated to the separately installed Phisher AniKoto extension.
 
 ### Optional progress uploads (v3, experimental)
