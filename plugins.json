@@ -1,10 +1,10 @@
 [
     {
         "iconUrl": "https://anikototv.to/AnikotoTheme/assets/images/favicon.png",
-        "fileHash": "sha256-d6ef6ad1d17d6b0219c79f0863db00ab0e034a7c595894ddda704abfd4d2f53c",
+        "fileHash": "sha256-ee58e9c4aa55f0843ce72c993928607315c20ad4cb572ead224eab9f0c1671b2",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/mohamedyassine-benmiled/eimon-cloudstream-repo",
-        "fileSize": 39593,
+        "fileSize": 41742,
         "status": 1,
         "language": "en",
         "authors": [
@@ -14,7 +14,7 @@
             "Anime",
             "AnimeMovie"
         ],
-        "version": 3,
+        "version": 4,
         "internalName": "AniKotoAccount",
         "description": "Sign in to Anikoto and browse your website Continue Watching list. Install Phisher's AniKoto for playback.",
         "url": "https://raw.githubusercontent.com/mohamedyassine-benmiled/eimon-cloudstream-repo/builds/AniKotoAccount.cs3",
