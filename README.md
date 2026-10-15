@@ -14,9 +14,15 @@ Repository name: **Eimon Cloudstream Repo**.
 
 ## AniKoto Account
 
-Browse **Continue Watching**, **Spotlight**, **Latest Updated**, **Most Popular**, and **Ongoing**, and search anime within AniKoto Account.
+Browse **Continue Watching**, **Watching – New Episodes**, **Latest Updated**, **Most Popular**, and **Ongoing**, and search anime within AniKoto Account.
 
-Version 5 reuses Phisher AniKoto's catalog lists/search where available, adds a landscape Spotlight row from Anikoto's Home page, and falls back to public website catalog/search pages if needed. Public browsing/search works without login. Only your personal Continue Watching list needs the saved account session. Phisher AniKoto is still needed for title details and playback.
+Phisher AniKoto's catalog lists/search are reused where available, with public website catalog/search fallbacks if needed. Public browsing/search works without login. Your personal Continue Watching and Watching – New Episodes lists need the saved account session. Phisher AniKoto is still needed for title details and playback. Version 6 removes the separate Spotlight row.
+
+### Watching – New Episodes (v6)
+
+On Home refresh, this row compares all pages of your website Continue Watching list with the **first three Latest Updated pages** (up to about 90 recent titles). It shows a title only if your saved episode is **at least 80% watched** and a **higher-numbered episode in the same sub/dub version** is available in those recent listings. Matching uses the title URL, not its display name.
+
+No matches or no login means the Home shelf is omitted. Cards label the latest available episode and your saved episode; they open the regular title page, not automatic episode/timestamp resume. Movies, ambiguous/fractional episode numbers, and unknown durations are skipped. This uses website progress; unsynced local progress does not count. Older updates beyond the three recent pages are outside this check.
 
 1. Install **AniKoto Account** from this repository.
 2. For playback, also install **AniKoto** from **Phisher Repo**:
