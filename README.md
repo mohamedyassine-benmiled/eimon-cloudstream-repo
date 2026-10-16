@@ -12,72 +12,30 @@ https://raw.githubusercontent.com/mohamedyassine-benmiled/eimon-cloudstream-repo
 
 Repository name: **Eimon Cloudstream Repo**.
 
-## AniKoto — standalone v1 test build
+## AniKoto
 
-Install **AniKoto** from this repository for independent browsing/search, Latest Dubbed/Subbed and movie catalogues, episode lists and playback. **No Phisher dependency or AniKoto Account installation is required.** Series use the Sub/Dub episode selector; movies offer labelled SUB/DUB choices in the player's Sources menu where available.
+Install **AniKoto** for independent browsing/search, Latest Dubbed/Subbed and movie catalogues, episode lists and playback. **No Phisher or AniKoto Account installation is required.** Series use the Sub/Dub episode selector; movies offer labelled SUB/DUB choices in the player's Sources menu where available.
 
-Disable Phisher's **AniKoto** provider before using this replacement, since both have the same provider name. Disable the older **AniKoto Account** provider too if you do not want duplicate account shelves. Its v10 binary remains available unchanged as a rollback option.
+Standalone AniKoto is now the supported release, following user confirmation of playback and account features. The obsolete **AniKoto Account** extension has been removed from the current listing and its binary is no longer distributed. If it is still installed, remove it manually; repository removal does not uninstall it or migrate its saved login. Disable Phisher's **AniKoto** provider to avoid conflicting provider names.
 
-Public browsing/playback needs no login. For personal lists, open this extension's gear/settings, sign in with **Remember me** checked, then select **Use this session**. This extension has its own saved login. Optional progress uploads remain **off by default**; enable them explicitly in Sync / account options. Immediate pause/exit uploads and a durable upload queue are not included.
+Public browsing/playback needs no login. For personal lists, open AniKoto's gear/settings, sign in with **Remember me** checked, then select **Use this session**. Standalone AniKoto has its own saved login. Passwords are not stored; session cookies are stored unencrypted in app data, so do not share preferences or backups.
 
-**Testing status:** Windows sub/dub/movie playback and 99 unit tests passed. Android/TV playback, signed-in native resume and website sync still need user testing. This is an initial test release; please report the title/episode, selected edition, app version and error if something fails. Account v10 and Qrmzi v2 are unchanged.
+### Account Continue Watching and resume
+
+Compatible **Eimon Android and Windows forks** show account Continue Watching inside AniKoto's own Home rows, with progress and automatic resume at the saved episode/timestamp. These apps are unofficial forks, not official CloudStream releases. Other extensions do not automatically gain this integration. Stock or unsupported hosts retain ordinary account rows as a fallback.
+
+**Watching – New Episodes** checks recent updates against website progress: at least 80% watched and a higher-numbered episode in the same audio edition. Its recent-title scan is bounded, not a complete release tracker.
+
+### Optional progress uploads
+
+Uploads remain **off by default**. Enable them explicitly in **Sync / account options**, then reopen a title through AniKoto and use the built-in player. Only newly saved, matched positions are uploaded; old local history is not uploaded. Movies, ambiguous episode matches, external players and casting may not be covered.
+
+The position-based bridge sends periodic/trailing updates, not immediate pause/exit reports. Pending uploads are memory-only; no durable offline queue is included. Avoid simultaneous playback on multiple devices, since local positions can overwrite website progress. Website sessions and mirrors can still expire or fail.
 
 ## Qrmzi — قرمزي
 
-Install **Qrmzi** from this repository, then select it on Home or Search. It includes Turkish series, movies, latest episodes, and Arabic search, with the video-server choices supplied by `www.qrmzi.tv` (CDNPlus, MP4Plus, AnaFast, VidSpeed where available).
-
-Qrmzi requires no account or Phisher extension. The currently inspected content is Arabic-subtitled; no separate dub catalogue was found. Original HLS masters are preserved so any audio/subtitle tracks supplied by a server remain selectable. Unavailable uploads and temporarily broken mirrors cannot be guaranteed. **Version 2 fixes Android/TV “No Links Found” caused by Android's stricter regex parser; playback was confirmed on an Android 13 phone.** TV playback still awaits device confirmation.
-
-## AniKoto Account
-
-### One Continue Watching row (v10)
-
-On apps where native account-list/exact-resume integration registers successfully, only the new native account shelf is used; the duplicate older account row is hidden. Stock apps and failed/disabled native integration keep the older row as a fallback. **Watching – New Episodes** remains separate. Refresh Home after updating to remove an old row already on screen. The v9 login/session-renewal improvements are retained.
-
-### Session renewal (v9)
-
-Server-issued cookie updates are now saved persistently, including expiry/deletion metadata and remember-me cookies. Safe website redirects and parallel account requests use the latest cookies instead of a frozen login snapshot. Verification/network/server errors no longer all appear as an expired login. Existing v8 sessions migrate without resetting audio/upload preferences.
-
-If your old session already expired, sign in once in the extension settings with **Remember me** checked, then choose **Use this session**. Passwords are not stored. Website sessions can still be revoked or expire; long-idle retention needs real-world confirmation. Qrmzi v2 and the existing optional native resume/legacy progress-upload behavior are unchanged.
-
-Browse **Continue Watching**, **Watching – New Episodes**, **Latest Updated**, **Most Popular**, and **Ongoing**, and search anime within AniKoto Account.
-
-Phisher AniKoto's catalog lists/search are reused where available, with public website catalog/search fallbacks if needed. Public browsing/search works without login. Your personal Continue Watching and Watching – New Episodes lists need the saved account session. Phisher AniKoto is still needed for title details and playback. Version 6 removes the separate Spotlight row.
-
-### Watching – New Episodes (v6)
-
-On Home refresh, this row compares all pages of your website Continue Watching list with the **first three Latest Updated pages** (up to about 90 recent titles). It shows a title only if your saved episode is **at least 80% watched** and a **higher-numbered episode in the same sub/dub version** is available in those recent listings. Matching uses the title URL, not its display name.
-
-No matches or no login means the Home shelf is omitted. Cards label the latest available episode and your saved episode; they open the regular title page, not automatic episode/timestamp resume. Movies, ambiguous/fractional episode numbers, and unknown durations are skipped. This uses website progress; unsynced local progress does not count. Older updates beyond the three recent pages are outside this check.
-
-1. Install **AniKoto Account** from this repository.
-2. For playback, also install **AniKoto** from **Phisher Repo**:
-   ```text
-   https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/refs/heads/builds/repo.json
-   ```
-3. Restart Cloudstream after installing both extensions.
-4. Open **AniKoto Account's settings/gear button → Sign in**.
-5. Log in on Anikoto, then tap **Use this session**.
-6. Select **AniKoto Account** on Home and refresh.
-
-Browse its rows or search with **AniKoto Account** selected. Results stay under this provider rather than opening directly through Phisher, allowing the account extension to register episodes for optional sync. After updating from an older version, restart the app and refresh Home to load the new rows. In-app navigation and sync still need device verification; adding browsing lists does not establish that the progress bridge is working on every host version.
-
-**Android login popup (v7):** reserves a real browser height to address the reported empty-browser area where only buttons appeared. It also adds Reload and page-loading error messages. If the page still fails, update/enable Android System WebView or Chrome and report the error shown in the popup. This layout change still needs a device retest; cs3d uses the same login/session flow as before.
-
-Timestamps on the list are labels, not automatic seek/resume. Playback extraction is delegated to the separately installed Phisher AniKoto extension.
-
-### Optional progress uploads (v3, experimental)
-
-After signing in, open the extension's **gear → Sync / account options → Enable uploads**. Then reopen an anime through **AniKoto Account** and watch in the app's built-in player. Search through AniKoto Account also works; opening directly in Phisher's provider is not covered.
-
-The extension sends newly saved player position/duration to your Anikoto website history roughly every 20 seconds, with a trailing update after the host stops saving positions. Wait about 10 seconds after stopping before exiting. Check **Sync / account options** for last-upload status. Refresh the website to check the saved episode/time.
-
-Version 4 adds diagnostic counts for matched episodes, extracted playback data, local progress events, and queued uploads. It also prepares a title already loaded through AniKoto Account when uploads are enabled and recognizes delivered playback-link callbacks regardless of the underlying provider's Boolean return value. If uploads do not occur, report the status message and counts from **Sync / account options**. Exact pause/exit event hooks are not implemented by this update.
-
-Uploads are **off by default**. The bridge depends on the local history format in Cloudstream Android/cs3d, and needs device testing. It does not upload old history, change local history, fabricate watched-time/mana rewards, or automatically seek to website timestamps. Only matched anime episodes are supported; ambiguous/special/multi-season episode matches and movies may be skipped. External players/casting may not report positions. Offline pending updates are memory-only and are lost on app exit. Avoid simultaneous playback on multiple devices: local positions can overwrite newer website progress. Disable uploads in the same menu if you do not want website history changed.
-
-Version 2 stores the session using SharedPreferences, available in Cloudstream Android and cs3d Windows, with no Android Keystore dependency. The session cookie is **unencrypted** in app data: do not share preference files or backups. Your password is not stored. Use **Forget login** to disconnect or switch accounts. Android users upgrading from version 1 must sign in again once. Android 6+ or cs3d's compatibility runtime is required; login, restart/persistence, and playback still need device testing.
+Install **Qrmzi** for Turkish series, movies, latest episodes and Arabic search, using the site's available video-server choices. No account or Phisher extension is required. Original HLS masters preserve available audio/subtitle tracks. Version 2 fixes Android's stricter regex parsing; unavailable uploads and broken mirrors cannot be guaranteed.
 
 ## Updates
 
-Refresh repositories in Cloudstream to receive new versions. This repository contains binaries and install manifests; the source is maintained separately.
+Refresh repositories in Cloudstream to see the current listing. AniKoto v1 and Qrmzi v2 binaries are unchanged by the AniKoto Account retirement. This repository contains binaries and install manifests; source is maintained separately.
