@@ -20,6 +20,10 @@ Qrmzi requires no account or Phisher extension. The currently inspected content 
 
 ## AniKoto Account
 
+### One Continue Watching row (v10)
+
+On apps where native account-list/exact-resume integration registers successfully, only the new native account shelf is used; the duplicate older account row is hidden. Stock apps and failed/disabled native integration keep the older row as a fallback. **Watching – New Episodes** remains separate. Refresh Home after updating to remove an old row already on screen. The v9 login/session-renewal improvements are retained.
+
 ### Session renewal (v9)
 
 Server-issued cookie updates are now saved persistently, including expiry/deletion metadata and remember-me cookies. Safe website redirects and parallel account requests use the latest cookies instead of a frozen login snapshot. Verification/network/server errors no longer all appear as an expired login. Existing v8 sessions migrate without resetting audio/upload preferences.
