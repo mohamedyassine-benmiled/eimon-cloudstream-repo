@@ -20,6 +20,12 @@ Qrmzi requires no account or Phisher extension. The currently inspected content 
 
 ## AniKoto Account
 
+### Session renewal (v9)
+
+Server-issued cookie updates are now saved persistently, including expiry/deletion metadata and remember-me cookies. Safe website redirects and parallel account requests use the latest cookies instead of a frozen login snapshot. Verification/network/server errors no longer all appear as an expired login. Existing v8 sessions migrate without resetting audio/upload preferences.
+
+If your old session already expired, sign in once in the extension settings with **Remember me** checked, then choose **Use this session**. Passwords are not stored. Website sessions can still be revoked or expire; long-idle retention needs real-world confirmation. Qrmzi v2 and the existing optional native resume/legacy progress-upload behavior are unchanged.
+
 Browse **Continue Watching**, **Watching – New Episodes**, **Latest Updated**, **Most Popular**, and **Ongoing**, and search anime within AniKoto Account.
 
 Phisher AniKoto's catalog lists/search are reused where available, with public website catalog/search fallbacks if needed. Public browsing/search works without login. Your personal Continue Watching and Watching – New Episodes lists need the saved account session. Phisher AniKoto is still needed for title details and playback. Version 6 removes the separate Spotlight row.
