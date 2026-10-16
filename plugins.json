@@ -1,6 +1,27 @@
 [
     {
         "iconUrl": "https://anikototv.to/AnikotoTheme/assets/images/favicon.png",
+        "fileHash": "sha256-b2d3a7657c77ab5c2e3fe4e573bd0bcbed3c7ce308ca57a2b00defaa086917f0",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/mohamedyassine-benmiled/eimon-cloudstream-repo",
+        "fileSize": 116747,
+        "status": 1,
+        "language": "en",
+        "authors": [
+            "Aimon"
+        ],
+        "tvTypes": [
+            "Anime",
+            "AnimeMovie"
+        ],
+        "version": 1,
+        "internalName": "AniKoto",
+        "description": "Standalone AniKoto v1 test: sub/dub catalogues, playback, account lists and optional sync. No Phisher needed. Android and signed-in sync testing pending.",
+        "url": "https://raw.githubusercontent.com/mohamedyassine-benmiled/eimon-cloudstream-repo/builds/AniKoto.cs3",
+        "name": "AniKoto"
+    },
+    {
+        "iconUrl": "https://anikototv.to/AnikotoTheme/assets/images/favicon.png",
         "fileHash": "sha256-d23b47ee65c4f9edf52231d4471230dec52bd9dc1f5320cf19d0e8c4b81c2db0",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/mohamedyassine-benmiled/eimon-cloudstream-repo",

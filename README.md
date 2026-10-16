@@ -12,6 +12,16 @@ https://raw.githubusercontent.com/mohamedyassine-benmiled/eimon-cloudstream-repo
 
 Repository name: **Eimon Cloudstream Repo**.
 
+## AniKoto — standalone v1 test build
+
+Install **AniKoto** from this repository for independent browsing/search, Latest Dubbed/Subbed and movie catalogues, episode lists and playback. **No Phisher dependency or AniKoto Account installation is required.** Series use the Sub/Dub episode selector; movies offer labelled SUB/DUB choices in the player's Sources menu where available.
+
+Disable Phisher's **AniKoto** provider before using this replacement, since both have the same provider name. Disable the older **AniKoto Account** provider too if you do not want duplicate account shelves. Its v10 binary remains available unchanged as a rollback option.
+
+Public browsing/playback needs no login. For personal lists, open this extension's gear/settings, sign in with **Remember me** checked, then select **Use this session**. This extension has its own saved login. Optional progress uploads remain **off by default**; enable them explicitly in Sync / account options. Immediate pause/exit uploads and a durable upload queue are not included.
+
+**Testing status:** Windows sub/dub/movie playback and 99 unit tests passed. Android/TV playback, signed-in native resume and website sync still need user testing. This is an initial test release; please report the title/episode, selected edition, app version and error if something fails. Account v10 and Qrmzi v2 are unchanged.
+
 ## Qrmzi — قرمزي
 
 Install **Qrmzi** from this repository, then select it on Home or Search. It includes Turkish series, movies, latest episodes, and Arabic search, with the video-server choices supplied by `www.qrmzi.tv` (CDNPlus, MP4Plus, AnaFast, VidSpeed where available).
