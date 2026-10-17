@@ -26,6 +26,8 @@ Compatible **Eimon Android and Windows forks** show account Continue Watching in
 
 **Watching – New Episodes** checks recent updates against website progress: at least 80% watched and a higher-numbered episode in the same audio edition. Its recent-title scan is bounded, not a complete release tracker.
 
+**AniKoto v3 + Windows 1.0.6-eimon / Android 4.8.0-eimon.2:** series details show cloud episode progress and resume at the saved timestamp. Earlier episodes in the matching season/audio edition are inferred watched in memory, not imported into local history. Future episode spoilers use Windows' existing toggle or Android's episode options. Native New Episodes cards start the newest eligible same-edition episode at **00:00** after fresh validation, without inheriting the old timestamp. Stock and older hosts retain the ordinary extension row. Signed-in Windows playback checks passed; Android automated tests/APK assembly passed, with phone/TV acceptance still pending.
+
 ### Optional progress uploads
 
 Uploads remain **off by default**. Enable them explicitly in **Sync / account options**, then reopen a title through AniKoto and use the built-in player. Only newly saved, matched positions are uploaded; old local history is not uploaded. Movies, ambiguous episode matches, external players and casting may not be covered.
@@ -44,4 +46,4 @@ Install **Qrmzi** for Turkish series, movies, latest episodes and Arabic search,
 
 ## Updates
 
-Refresh repositories in Cloudstream to receive **AniKoto v2**. Qrmzi v2 is unchanged and the retired AniKoto Account extension remains excluded. This repository contains binaries and install manifests; source is maintained separately.
+Refresh repositories in Cloudstream to receive **AniKoto v3**. Qrmzi v2 is unchanged and the retired AniKoto Account extension remains excluded. This repository contains binaries and install manifests; source is maintained separately.

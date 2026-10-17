@@ -1,10 +1,10 @@
 [
     {
         "iconUrl": "https://anikototv.to/AnikotoTheme/assets/images/favicon.png",
-        "fileHash": "sha256-1aa1f92b085ca4f8511e51751a22a261e16a45a1cfd9ce41cd4184553858ec51",
+        "fileHash": "sha256-473195761d656e3d47a370b47d642ec50301e8f98a5298c15a246b61e4e566bb",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/mohamedyassine-benmiled/eimon-cloudstream-repo",
-        "fileSize": 122313,
+        "fileSize": 131120,
         "status": 1,
         "language": "en",
         "authors": [
@@ -14,9 +14,9 @@
             "Anime",
             "AnimeMovie"
         ],
-        "version": 2,
+        "version": 3,
         "internalName": "AniKoto",
-        "description": "Standalone AniKoto: sub/dub playback, account lists and optional sync. Includes cookie-free session diagnostics for unexpected sign-outs. No Phisher required.",
+        "description": "AniKoto: sub/dub playback, account lists, optional sync and session diagnostics. Cloud title progress and latest-episode resume on compatible Eimon apps; stock-host fallback retained.",
         "url": "https://raw.githubusercontent.com/mohamedyassine-benmiled/eimon-cloudstream-repo/builds/AniKoto.cs3",
         "name": "AniKoto"
     },
