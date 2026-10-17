@@ -32,10 +32,16 @@ Uploads remain **off by default**. Enable them explicitly in **Sync / account op
 
 The position-based bridge sends periodic/trailing updates, not immediate pause/exit reports. Pending uploads are memory-only; no durable offline queue is included. Avoid simultaneous playback on multiple devices, since local positions can overwrite website progress. Website sessions and mirrors can still expire or fail.
 
+### Session diagnostics (v2)
+
+Version 2 adds **Sync / account options → Session diagnostics** to investigate unexpected sign-outs. It retains a short trace across restarts: UTC timestamps, endpoint categories, HTTP status, authentication-cookie additions/removals/rotation, and recovery outcomes. It does **not** record cookie values/fingerprints, passwords, account IDs, full URLs, response bodies or user agents. No diagnostics are uploaded automatically.
+
+Existing saved login, audio and upload preferences are preserved; no new sign-in is required if your session still works. After updating, restart Cloudstream once to load the new plugin. If the logout happens again, report the session-diagnostics text—not preference files or cookie-store backups. The update helps identify a recurrence; it does not claim to fix website-side token invalidation.
+
 ## Qrmzi — قرمزي
 
 Install **Qrmzi** for Turkish series, movies, latest episodes and Arabic search, using the site's available video-server choices. No account or Phisher extension is required. Original HLS masters preserve available audio/subtitle tracks. Version 2 fixes Android's stricter regex parsing; unavailable uploads and broken mirrors cannot be guaranteed.
 
 ## Updates
 
-Refresh repositories in Cloudstream to see the current listing. AniKoto v1 and Qrmzi v2 binaries are unchanged by the AniKoto Account retirement. This repository contains binaries and install manifests; source is maintained separately.
+Refresh repositories in Cloudstream to receive **AniKoto v2**. Qrmzi v2 is unchanged and the retired AniKoto Account extension remains excluded. This repository contains binaries and install manifests; source is maintained separately.
